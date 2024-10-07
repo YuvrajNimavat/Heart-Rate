@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "HeartRateMonitor";
     private static final int CAMERA_PERMISSION_REQUEST = 100;
+    private static final int FPS = 30;
     private static final AtomicBoolean processing = new AtomicBoolean(false);
 
     private Camera camera;
@@ -88,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
                 if (isFingerDetected && vibrator != null && vibrator.hasVibrator()) {
-                    vibrator.vibrate(100);
+                    vibrator.vibrate(200);
                 }
                 handler.postDelayed(this, 1000);
             }
@@ -292,6 +293,7 @@ public class MainActivity extends AppCompatActivity {
             textViewProgress.setVisibility(View.VISIBLE);
             circularProgressIndicator.setVisibility(View.VISIBLE);
             lottieAnimationView.setVisibility(View.VISIBLE);
+
         });
     }
 
