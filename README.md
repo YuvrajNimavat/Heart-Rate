@@ -12,6 +12,8 @@ The app uses the camera to detect changes in the user's fingertip caused by bloo
 
 <h3>Screenshot 📸</h3>
 
+⚠️The RED DOT 🔴 IS CAMERA WITH FINGER ☝️ !!!! 
+
 <img src="https://github.com/user-attachments/assets/dbc1a1ad-f2c6-49fd-b962-48344f41e1c3" alt="Heart Rate Monitor" width="300"/>
 
 
